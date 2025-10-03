@@ -1,3 +1,5 @@
+
+
 :root {
     --bg: #F4D04E;
     --muted: #6B6B6B;
@@ -9,7 +11,7 @@ body {
     margin: 0;
     background-color: var(--bg);
     font-family: "Figtree", sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.5;
 }
 
@@ -28,34 +30,34 @@ body {
 
 .card-container {
     position: relative;
-    bottom: 10px;
-    right: 10px;
+    bottom: 0.625rem;
+    right: 0.625rem;
     box-sizing: border-box;
     width: 384px;
-    padding: 24px;
+    padding: 1.5rem;
     background-color: var(--card);
     outline: 1px solid black;
-    border-radius: 20px;
-    display: flex;
+    border-radius: 1.25rem;
+    display: flex; 
     flex-direction: column;
 }
 
 .card-container .blog-image {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 0.75rem;
 }
 
 .category {
     margin: 0;
     background-color: var(--bg);
-    font-size: 14px;
-    padding: 4px 12px;
-    width: 58px;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    width: 3.625rem;
     text-align: center;
     font-weight: 800;
     border-radius: 4px;
@@ -65,7 +67,7 @@ body {
     margin: 0;
     font-weight: 500;
     color: var(--text);
-    font-size: 14px;
+    font-size: 0.875rem;
 
 }
 
@@ -80,29 +82,29 @@ a:hover h1, a:active h1, a:focus {
 
 h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 800;
 }
 
 p {
     margin: 0;
     color: var(--muted);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
 }
 
 .blog-info {
-    margin-top: 12px;
+    margin-top:0.75rem;
     display: flex;
     align-items: center;
 }
 
 .blog-info img {
-    margin-right: 12px;
+    margin-right: 0.75rem;
 }
 
 .author-name {
     color: var(--text);
     font-weight: 800;
-    font-size: 14px;
+    font-size: 0.75rem;
 }
