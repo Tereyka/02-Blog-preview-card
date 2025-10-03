@@ -48,7 +48,7 @@ body {
 .category {
     margin: 0;
     background-color: var(--bg);
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     padding: 0.25rem 0.75rem;
     width: 3.625rem;
     text-align: center;
@@ -101,7 +101,7 @@ p {
 .author-name {
     color: var(--text);
     font-weight: 800;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
 }
 
 @media (max-width: 768px) {
@@ -122,8 +122,7 @@ p {
         font-size: 1.25rem;
     }
 
-    p,
-    .author-name {
+    p {
         font-size: 0.875rem;
     }
 }
