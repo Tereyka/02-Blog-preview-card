@@ -1,5 +1,3 @@
-
-
 :root {
     --bg: #F4D04E;
     --muted: #6B6B6B;
@@ -24,7 +22,7 @@ body {
 
 .card-shadow {
     background-color: #111111;
-    width: 384px;
+    width: 24rem;
     border-radius: 20px;
 }
 
@@ -33,16 +31,19 @@ body {
     bottom: 0.625rem;
     right: 0.625rem;
     box-sizing: border-box;
-    width: 384px;
+    width: 24rem;
     padding: 1.5rem;
     background-color: var(--card);
     outline: 1px solid black;
     border-radius: 1.25rem;
-    display: flex; 
+    display: flex;
     flex-direction: column;
 }
 
 .card-container .blog-image {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
     margin-bottom: 1.5rem;
 }
 
@@ -76,7 +77,9 @@ a {
     color: var(--text);
 }
 
-a:hover h1, a:active h1, a:focus {
+a:hover h1,
+a:active h1,
+a:focus {
     color: var(--bg);
 }
 
@@ -94,7 +97,7 @@ p {
 }
 
 .blog-info {
-    margin-top:0.75rem;
+    margin-top: 0.75rem;
     display: flex;
     align-items: center;
 }
@@ -107,4 +110,30 @@ p {
     color: var(--text);
     font-weight: 800;
     font-size: 0.75rem;
+}
+
+@media (max-width: 768px) {
+
+    .card-shadow,
+    .card-container {
+        width: 20.5rem;
+    }
+
+    .blog-image {
+        object-fit: cover;
+    }
+
+    .category,
+    .published {
+        font-size: 0.75rem;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    p,
+    .author-name {
+        font-size: 0.875rem;
+    }
 }
