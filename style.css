@@ -20,16 +20,8 @@ body {
     min-height: 100vh;
 }
 
-.card-shadow {
-    background-color: #111111;
-    width: 24rem;
-    border-radius: 20px;
-}
-
 .card-container {
-    position: relative;
-    bottom: 0.625rem;
-    right: 0.625rem;
+    box-shadow: 8px 8px 0 var(--text);
     box-sizing: border-box;
     width: 24rem;
     padding: 1.5rem;
@@ -113,8 +105,6 @@ p {
 }
 
 @media (max-width: 768px) {
-
-    .card-shadow,
     .card-container {
         width: 20.5rem;
     }
