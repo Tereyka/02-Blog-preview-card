@@ -18,10 +18,10 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding:1rem;
 }
 
 .card-container {
-    box-shadow: 8px 8px 0 var(--text);
     box-sizing: border-box;
     width: 24rem;
     padding: 1.5rem;
@@ -33,9 +33,9 @@ body {
 }
 
 .card-container .blog-image {
-    border-radius: 10px;
+    border-radius: 0.625rem;
     width: 100%;
-    height: 200px;
+    height: auto;
     margin-bottom: 1.5rem;
 }
 
@@ -53,7 +53,7 @@ body {
     width: 3.625rem;
     text-align: center;
     font-weight: 800;
-    border-radius: 4px;
+    border-radius: 0.25rem;
 }
 
 .published {
@@ -61,7 +61,6 @@ body {
     font-weight: 500;
     color: var(--text);
     font-size: 0.875rem;
-
 }
 
 a {
@@ -69,11 +68,8 @@ a {
     color: var(--text);
 }
 
-a:hover h1,
-a:active h1,
-a:focus {
-    color: var(--bg);
-}
+
+
 
 h1 {
     margin: 0;
@@ -104,15 +100,18 @@ p {
     font-size: 0.875rem;
 }
 
+.card-container:hover {
+    box-shadow: 8px 8px 0 var(--text);
+}
+
+.card-container:hover h1 {
+    color: var(--bg);
+}
+
 @media (max-width: 768px) {
     .card-container {
         width: 20.5rem;
     }
-
-    .blog-image {
-        object-fit: cover;
-    }
-
     .category,
     .published {
         font-size: 0.75rem;
